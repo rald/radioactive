@@ -5,29 +5,12 @@
 O IS YOU
 X IS CPU
 
-RANDOM FIRST PLAYER
+The game is played on a 10x10 grid. Players (You = O, CPU = X) 
+take turns placing atoms. If an atom is surrounded by enough neighbors, 
+it becomes unstable, "explodes" (marked by *), and potentially triggers 
+nearby atoms to explode as well.
 
-BEGIN:
-
-SHOW BOARD
-
-DO PLAYER MOVE
-
-IF CELL HAS 3 OR MORE NEIGHBORS THEN CELL='*': CHAIN REACTION
-
-IN A CHAIN REACTION ALL CELL THAT IS A NEIGHBOR 
-OF A '*' CELL WILL BECOME '*' CELL
-
-SHOW BOARD
-
-CLEAN WASTE '*' CELLS
-
-SHOW BOARD
-
-AFTER A CHAIN REACTION IF A PLAYER LOSES ALL HIS PIECES 
-THE OTHER PLAYER WIN AND SCORE IS THE NUMBER OF LEFT PIECES
-IF ALL PIECES ARE GONE IT IS A DRAW
-
-NEXT PLAYER
-
-GOTO BEGIN
+if all atoms explode it is a DRAW
+if all of your atoms explode the CPU win
+if all of CPU atoms explode the YOU win
+score is the number of atoms left.
