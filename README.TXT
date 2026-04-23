@@ -6,7 +6,7 @@ O IS YOU
 X IS CPU
 
 The game is played on a 10x10 grid. Players (You = O, CPU = X) 
-take turns placing atoms. If an atom is surrounded by enough neighbors, 
+take turns placing atoms. If an atom is surrounded by enough (3 or more) neighbors, 
 it becomes unstable, "explodes" (marked by *), and potentially triggers 
 nearby atoms to explode as well.
 
